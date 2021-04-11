@@ -1,0 +1,183 @@
+/* Header */
+.greyBorder {
+  border-bottom: 1px solid #e9ebeb;
+  height: 60px;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.logo {
+  height: 41px;
+  margin-top: 9px;
+}
+
+.headerText {
+  margin-right: 30px;
+  font-family: 'roboto';
+}
+
+.headerText p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.header h1 {
+  color: #2e3333;
+  font-size: 32px;
+  font-weight: bolder;
+  margin: 10px 0px 32px;
+}
+
+.header p {
+  color: #868a8a;
+}
+
+.restoImage > img {
+  height: 200px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.flexHeader {
+  display: flex;
+  padding: 30px 0;
+}
+
+/* Main section */
+
+.main {
+  background-color: #f3f5f5;
+}
+
+.categorie {
+  flex: 1;
+}
+
+.meal > h1 {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #2e3333;
+  font-family: 'roboto';
+}
+
+.mealSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mealBox {
+  display: flex;
+  height: 160px;
+  width: 400px;
+  background-color: white;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition-duration: 0.3s;
+}
+
+.mealBox:hover {
+  box-shadow: 0px 22px 24px 0px rgba(46, 51, 51, 0.07);
+}
+
+.mealBoxText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title {
+  font-family: 'roboto';
+  color: #2e3333;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.description {
+  width: 240px;
+  height: 36px;
+  /* white-space: nowrap; */
+  font-size: 15px;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #808484;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-family: 'roboto';
+  padding-right: 10px;
+}
+
+.fullWidth {
+  width: 360px;
+  /* white-space: nowrap; */
+  font-size: 15px;
+  line-height: 1.3;
+  height: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #868a8a;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-family: 'roboto';
+}
+
+.mealBox img {
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.prices {
+  display: flex;
+  color: #868a8a;
+  font-family: 'roboto';
+}
+
+.price {
+  margin-right: 10px;
+}
+
+.populaire {
+  display: flex;
+  width: 80px;
+  color: #ff8000;
+  justify-content: space-between;
+}
+
+.basket {
+  width: 350px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin-top: 70px;
+  padding-bottom: 40px;
+  font-family: 'roboto';
+  color: #808484;
+  font-size: 16px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #2e3333;
+}
+
+footer a:hover {
+  font-weight: 500;
+}
