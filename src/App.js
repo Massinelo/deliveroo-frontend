@@ -6,12 +6,14 @@ import logo from './assets/deliveroo-logo.png';
 // components
 import Header from './components/Header.js';
 import Categorie from './components/Categorie.js';
+import Panier from './components/Basket.js';
 import Footer from './components/Footer.js';
 
 function App() {
   const [restaurant, setRestaurant] = useState({});
   const [categories, setCategories] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -38,10 +40,17 @@ function App() {
               if (categorie.meals.length === 0) {
                 return null;
               }
-              return <Categorie categorie={categorie} key={index} />;
+              return (
+                <Categorie
+                  categorie={categorie}
+                  key={index}
+                  products={products}
+                  setProducts={setProducts}
+                />
+              );
             })}
           </div>
-          <div className="basket">panier</div>
+          <Panier products={products} setProducts={setProducts} />
         </div>
         <Footer />
       </div>

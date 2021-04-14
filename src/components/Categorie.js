@@ -9,7 +9,14 @@ const Categorie = (props) => {
         {props.categorie.meals.map((meal, index) => {
           // Transmettre toutes les clés d'un objet en tant que props,
           //  on peut utilisé le spread operator comme ci-dessous :
-          return <MealBox {...meal} key={index} />;
+          return (
+            <MealBox
+              {...meal}
+              key={index}
+              products={props.products}
+              setProducts={props.setProducts}
+            />
+          );
         })}
       </div>
     </div>
